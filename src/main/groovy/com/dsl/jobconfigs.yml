@@ -1,0 +1,7 @@
+jenkinsJobs:
+  - name: spring-petclinic
+    repo: https://github.com/aditya-mittal/spring-petclinic.git
+    branch: master
+    jenkinsFilePath: Jenkinsfile
+    folder: spring-petclinic
+    runImmediately: false
