@@ -4,7 +4,7 @@ package com.dsl
 import org.yaml.snakeyaml.Yaml
 
 Yaml parser = new Yaml()
-def jobsConfigFile = readFileFromWorkspace("jenkins-jobs/src/main/groovy/com/dsl/jobconfigs.yml")
+def jobsConfigFile = readFileFromWorkspace("src/main/groovy/com/dsl/jobconfigs.yml")
 
 Object jobConfigs = parser.load(jobsConfigFile)
 
