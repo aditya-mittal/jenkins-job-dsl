@@ -1,5 +1,6 @@
 package com.dsl
 
+@Grab('org.yaml:snakeyaml:1.23')
 import org.yaml.snakeyaml.Yaml
 
 Yaml parser = new Yaml()
@@ -37,7 +38,6 @@ jobConfigs["jenkinsJobs"].each {
                     git {
                         remote {
                             url "${remoteRepo}"
-                            credentials 'gitlab-credentials'
                         }
                         branch "${repoBranch}"
                     }
